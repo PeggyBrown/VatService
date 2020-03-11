@@ -5,6 +5,9 @@ import java.util.Arrays;
 
 public class EuropeanVatProvider implements VatProvider {
 
+    public EuropeanVatProvider() {
+    }
+
     public BigDecimal getVatFor(String country, Type productType) {
         BigDecimal result;
         switch (country) {
